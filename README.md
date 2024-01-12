@@ -14,7 +14,7 @@ For the AI Agent, various workflows were implemented, some of them are listed be
 *   Supervised Learning with Ensemble Models such as Random Forests.
 *   Hyperparameter tuning with Grid Search Cross Validation.
 *   Supervised Learning with Deep Learning techniques such as CNNs.
-*   Transfer Learning and Finetuning with the Inception model
+*   Transfer Learning and Finetuning with the Xception model
 *   Evaluation of models using various metrics in the Validation and Test set. 
 *   Creation of a simulated environment for the Rock-Scissor-Paper game and deployment of AI Agent and Random Agent in that environment.
 
@@ -176,7 +176,7 @@ Examples of custom dataset classification with CNN Agent (Top Performance Classi
 
 # Conclusion
 
-To sum up the findings of the upper workflow, `the AI Agent V4 had an exceptional performance in the Rock-Scissor-Paper game resembled in RSP Environment with 96.4% accuracy achieved in the test set even after the transformation occurred from the Random Agent`. The key ideas that helped the Random Agent V4 to outperform all the other agents were the Transfer Learning and Finetuning with the Inception model and of course, the Data Augmentation technique applied during training.  
+To sum up the findings of the upper workflow, `the AI Agent V4 had an exceptional performance in the Rock-Scissor-Paper game resembled in RSP Environment with 96.4% accuracy achieved in the test set even after the transformation occurred from the Random Agent`. The key ideas that helped the Random Agent V4 to outperform all the other agents were the Transfer Learning and Finetuning with the Xception model and of course, the Data Augmentation technique applied during training.  
 However, for training such models the need for computational power was increased so it was important to train the CNN models in GPU, something that was not necessary for training the ML ensemble models.  
 Regarding the ML models, their performance was limited compared to the DL models, something that we expected, due to the efficiency of CNN models to handle images as their input.  
 Also, for the ML models, it was very important to work with images in Grayscale format and resize them to get a final vector of shape (3750,). The reshaping of the images to 1-dimensional vectors as explained earlier destroyed a significant part of the topological information of neighboring regions contained in the raw form of images and can be used from models like CNNs. With the CNN models, there was no need for such operations so all pixels were used, and all 3 channels of the RGB format. Dimensionality reduction algorithms were also used for the ensemble models to reduce even further the features of each sample. After all these techniques the ensemble models achieved a score of 88% in the validation set and approximately 60% in the RSP environment, a score far lower than from the CNN Agent.
