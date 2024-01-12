@@ -94,7 +94,7 @@ In total 4 CNN models created to classify Rock-Scissor-Paper images with the fol
 *    `Convolutional Neural Network (Vanilla Version)`: 87% accuracy in validation set
 *    `Convolutional Neural Network (with L2 Regularization)`: 88% accuracy in validation set
 *    `Convolutional Neural Network (with L2 regularization + Data Augmentation)`: 95% accuracy in validation set
-*    `Convolutional Neural Network (all above + Transfer Learning)`: 99% accuracy in validation set
+*    `Convolutional Neural Network (Data Augmentation + Transfer Learning)`: 99% accuracy in validation set
 
 <br>
 <div align="center">
